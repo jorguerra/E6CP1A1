@@ -3,7 +3,8 @@
 
 a = ''
 10.times do |i|
-	
+  k = i + 1
+  a += k.to_s + (k.even? ? 'par' : 'impar') + ' '
 end
 
 puts a
