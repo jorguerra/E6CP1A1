@@ -24,3 +24,18 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+puts "<table><tbody>\n"
+
+k = 1
+c = 1 
+while k < 4
+  puts "\t<tr>\n"
+  4.times do
+    puts "\t <td> #{c} </td>\n"
+    c = c + 1
+  end  
+  puts "\t</tr>\n"
+  k += 1
+end
+puts "</tbody></table>"
